@@ -6,9 +6,7 @@ public class Main {
     public static void main(String[] args) {
         DriverManager.drivers().forEach(driver -> System.out.println(driver.toString()));
 
-        // Verificar si la conexión fue exitosa antes de continuar
         if (realizarConexion()) {
-            // Ejemplo de uso de todas las operaciones
             seleccionarEnemigos();
             insertarEnemigo("Carlos", "Francia", "Espía internacional");
             modificarEnemigo("Carlos", "Alemania", "Agente doble");
